@@ -3,7 +3,7 @@
 #ifndef US82_H_
 #define US82_H_
 
-#define SW_PORT 8
+#define SW_PORT 8  // SW Port and Remote Port
 #define GLED 13
 
 
