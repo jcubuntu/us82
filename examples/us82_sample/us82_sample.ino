@@ -7,6 +7,7 @@ void setup() {
   Serial.begin(115200);
   
   SW_press(); // Wair For Press SW
+  
   motor(1, 100);  // motor 1 forward maximun speed is 100
   motor(2, 100);  // motor 2 forward maximun speed is 100
   delay(1000);
