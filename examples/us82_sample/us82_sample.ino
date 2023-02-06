@@ -1,5 +1,7 @@
 #include <us82.h>
 
+bool ledState = 1;
+
 void setup() {
   uSetup();  // initial uS82 system
   Serial.begin(115200);
@@ -41,8 +43,15 @@ void setup() {
 
 void loop() {
   int Value;
+  ledState = !ledState;
+  out(GLED,ledState);       // GLED is Green LED on Pin 13
   for (int pins = 0; pins < 8; pins++){
-    Value = analog(pins);  // read analog value form pin ADC0 on iBit (pins name A0,A1,A2 ... A7)
+    Value = analog(pins);  // read analog value form pin A0,A1,A2 ... A7
+    Serial.print(Value);
+    Serial.print("\t");
+  }
+  for (int pins = 0; pins < 8; pins++){
+    Value = in(pins);  // read Digital value form pin With "in" command 0,1,2...7 if use "digitalRead" pins is 14,15,16..19
     Serial.print(Value);
     Serial.print("\t");
   }
