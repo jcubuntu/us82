@@ -1,5 +1,5 @@
 # μS82
-μS82 Board Lib for Arduino
+μS82 & μS112+ Board Lib for Arduino
 
 ## How to use
 จำเป็นต้องเรียกใช้งาน Function uSetup(); ก่อนเพื่อกำหนดค่าเริ่มต้น
