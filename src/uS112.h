@@ -4,7 +4,6 @@
 #define US112_H_
 
 #define SW_PORT 8  // SW Port and Remote Port
-#define GLED    13
 
 #define USCK    13
 #define UMISO   12
